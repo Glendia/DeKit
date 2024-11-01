@@ -8,11 +8,11 @@ hero:
   tagline: My great project tagline
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 项目 ->
+      link: /project
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Github ->
+      link: https://github.com/Glendia/DeKit
 
 features:
   - title: Feature A
