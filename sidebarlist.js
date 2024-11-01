@@ -15,14 +15,21 @@ const sidebarItems = mdFiles.map(file => {
   const titleMatch = content.match(/# (.+)/);
   const title = titleMatch ? titleMatch[1] : file.replace('.md', '');
   const mtime = fs.statSync(filePath).mtime; // 获取文件的最后修改时间
-  return { text: title, link: `/projects/${file.replace('.md', '')}`, mtime };
+  return { text: title, link: `/projects/${file.replace('.md', '')}`, mtime, file };
 });
 
-// 按照最后修改时间降序排序
-sidebarItems.sort((a, b) => b.mtime - a.mtime);
+// 按照文件名是否为index.md优先排序，然后按照最后修改时间降序排序
+sidebarItems.sort((a, b) => {
+  if (a.file === 'index.md') return -1;
+  if (b.file === 'index.md') return 1;
+  return b.mtime - a.mtime;
+});
 
-// 去除mtime字段
-sidebarItems.forEach(item => delete item.mtime);
+// 去除mtime和file字段
+sidebarItems.forEach(item => {
+  delete item.mtime;
+  delete item.file;
+});
 
 // 将生成的侧边栏配置保存到.sidebar.js文件中
 sidebarConfig['/projects/'] = sidebarItems;
