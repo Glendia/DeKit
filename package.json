@@ -1,9 +1,10 @@
 {
   "devDependencies": {
-    "vitepress": "^1.4.3"
+    "vitepress": "^1.4.3",
+    "vitepress-sidebar": "^1.29.0"
   },
   "scripts": {
-    "dev": "vitepress dev",
+    "dev": "node sidebarlist.js && vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview"
   },

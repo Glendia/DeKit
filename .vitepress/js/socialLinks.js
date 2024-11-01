@@ -1,3 +1,3 @@
 export const socialLinks = [
-  { icon: "github", link: "https://github.com/Glendia/VitepressTemplate" },
+  { icon: "github", link: "https://github.com/Glendia/DeKit" },
 ];

@@ -1,0 +1,149 @@
+
+  :root {
+    --vp-nav-height: 80px;
+    --vp-nav-logo-height: 40px;
+  }
+  :root {
+    --vp-c-bg: #f5f6fb;
+    --vp-c-bg-alt: #f5f6fb;
+    --vp-c-bg-soft: #e6edff;
+    --vp-c-indigo-1: #0066ff;
+    --vp-c-indigo-2: #2079ff;
+    --vp-c-indigo-3: #0066ff;
+    --vp-c-indigo-soft: rgba(100, 108, 255, 0.14);
+  }
+  
+  .VPNavBarMenuLink {
+    font-size: 16px !important;
+    padding: 0 30px !important;
+  }
+  
+  :root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(
+      120deg,
+      #00dc82,
+      #3370ff
+    );
+    --vp-home-hero-image-background-image: linear-gradient(
+      120deg,
+      #00dc82,
+      #3370ff 80%
+    );
+    --vp-home-hero-image-filter:blur(44px)
+  }
+  .VPButton.medium {
+    border-radius: 10px !important;
+    padding: 0 30px !important;
+    line-height: 40px !important;
+    font-size: 15px !important;
+  }
+  .VPHome {
+    margin-bottom: 0;
+  }
+  .VPSidebarItem.level-0 .text {
+    font-size: 16px !important;
+  }
+  .VPNavScreenMenuLink {
+    font-size: 16px !important;
+    text-align: center;
+  }
+  .VPSidebar.open {
+    border-radius: 0 16px 16px 0;
+  }
+  .dark {
+    --vp-c-bg: #1e1e1e;
+    --vp-c-bg-alt: #1e1e1e;
+    --vp-c-bg-soft: #383d5ae8;
+    --vp-c-text-1: #e6e6e6;
+    --vp-c-text-2: #c6c6c6;
+    --vp-c-text-3: #a6a6a6;
+    --vp-c-text-4: #8e8e8e;
+    --vp-c-divider-1: #333333;
+    --vp-c-divider-2: #444444;
+    --vp-c-brand-1: #00dc82;
+    --vp-c-brand-2: #00dc82;
+    --vp-c-brand-3: #00dc82;
+    --vp-c-brand-soft: rgba(0, 220, 130, 0.14);
+    --vp-c-brand-soft-2: rgba(0, 220, 130, 0.08);
+    --vp-c-brand-gradient: linear-gradient(90deg, #00dc82, #3370ff);
+    --vp-c-code-inline-bg: #333333;
+    --vp-c-code-block-bg: #333333;
+    --vp-c-code-block-text: #e6e6e6;
+    --vp-c-code-block-line-number: #8e8e8e;
+    --vp-c-admonition-info-bg: #333333;
+    --vp-c-admonition-info-border: #333333;
+    --vp-c-admonition-info-text: #e6e6e6;
+    --vp-c-admonition-tip-bg: #333333;
+    --vp-c-admonition-tip-border: #333333;
+    --vp-c-admonition-tip-text: #e6e6e6;
+    --vp-c-admonition-warning-bg: #333333;
+    --vp-c-admonition-warning-border: #333333;
+    --vp-c-admonition-warning-text: #e6e6e6;
+    --vp-c-admonition-danger-bg: #333333;
+    --vp-c-admonition-danger-border: #333333;
+    --vp-c-admonition-danger-text: #e6e6e6;
+    --vp-c-admonition-details-bg: #333333;
+    --vp-c-admonition-details-border: #333333;
+    --vp-c-admonition-details-text: #e6e6e6;
+    --vp-c-admonition-details-summary-text: #e6e6e6;
+    --vp-c-admonition-details-summary-hover-bg: #333333;
+    --vp-c-admonition-details-summary-hover-text: #e6e6e6;
+    --vp-c-admonition-details-summary-focus-bg: #333333;
+    --vp-c-admonition-details-summary-focus-text: #e6e6e6;
+    --vp-c-admonition-details-summary-active-bg: #333333;
+    --vp-c-admonition-details-summary-active-text: #e6e6e6;
+    --vp-c-admonition-details-summary-focus-ring: #333333;
+    --vp-c-admonition-details-summary-focus-ring-opacity: 0.2;
+    --vp-c-admonition-details-summary-focus-ring-width: 2px;
+    --vp-c-admonition-details-summary-focus-ring-offset: 2px;
+    --vp-c-admonition-details-summary-focus-ring-offset-color: #333333;
+    --vp-c-admonition-details-summary-focus-ring-inset: 0;
+    --vp-c-admonition-details-summary-focus-ring-shadow: none;
+    --vp-c-admonition-details-summary-focus-ring-shadow-color: #333333;
+    --vp-c-admonition-details-summary-focus-ring-shadow-opacity: 0.2;
+    --vp-c-admonition-details-summary-focus-ring-shadow-width: 2px;
+    --vp-c-admonition-details-summary-focus-ring-shadow-offset: 2px;
+    --vp-c-admonition-details-summary-focus-ring-shadow-inset: 0;
+  }
+  .giscus-container {
+    margin: 20px 70px 20px 0;
+    text-align: center;
+    padding: 0 70px;
+    border-radius: 16px;
+    background-color: #ffffff;
+  }
+  .giscus-container p {
+    margin: 20px auto;
+    font-size: 22px;
+    color: #666;
+    line-height: 30px;
+    font-weight: 800;
+    padding-top: 20px;
+  }
+  @media (max-width: 768px) {
+    .giscus-container {
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+      padding: 0 20px;
+    }
+  }
+  
+  .CustomContact {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+  }
+  .CustomContactButtom {
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+  }
+  .dark .CustomContact {
+      background: #373737;
+    }
+  .dark .CustomContactButtom {
+      background: #373737;
+    }
